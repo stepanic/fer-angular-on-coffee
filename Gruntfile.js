@@ -31,18 +31,6 @@ module.exports = function (grunt) {
         files: ['bower.json'],
         tasks: ['bowerInstall']
       },
-<<<<<<< HEAD
-      js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-        tasks: ['newer:jshint:all'],
-        options: {
-          livereload: true
-        }
-      },
-      jsTest: {
-        files: ['test/spec/{,*/}*.js'],
-        tasks: ['newer:jshint:test', 'karma']
-=======
       coffee: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.{coffee,litcoffee,coffee.md}'],
         tasks: ['newer:coffee:dist']
@@ -50,7 +38,6 @@ module.exports = function (grunt) {
       coffeeTest: {
         files: ['test/spec/{,*/}*.{coffee,litcoffee,coffee.md}'],
         tasks: ['newer:coffee:test', 'karma']
->>>>>>> temp
       },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
@@ -66,10 +53,7 @@ module.exports = function (grunt) {
         files: [
           '<%= yeoman.app %>/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
-<<<<<<< HEAD
-=======
           '.tmp/scripts/{,*/}*.js',
->>>>>>> temp
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
@@ -116,20 +100,8 @@ module.exports = function (grunt) {
         reporter: require('jshint-stylish')
       },
       all: [
-<<<<<<< HEAD
-        'Gruntfile.js',
-        '<%= yeoman.app %>/scripts/{,*/}*.js'
-      ],
-      test: {
-        options: {
-          jshintrc: 'test/.jshintrc'
-        },
-        src: ['test/spec/{,*/}*.js']
-      }
-=======
         'Gruntfile.js'
       ]
->>>>>>> temp
     },
 
     // Empties folders to start fresh
@@ -174,8 +146,6 @@ module.exports = function (grunt) {
       }
     },
 
-<<<<<<< HEAD
-=======
     // Compiles CoffeeScript to JavaScript
     coffee: {
       options: {
@@ -202,7 +172,6 @@ module.exports = function (grunt) {
       }
     },
 
->>>>>>> temp
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
       options: {
@@ -362,14 +331,6 @@ module.exports = function (grunt) {
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
-<<<<<<< HEAD
-=======
-        }, {
-            expand: true,
-            cwd: '<%= yeoman.app %>/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap',
-            dest: '<%= yeoman.dist %>/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap',
-            src: '*.*'
->>>>>>> temp
         }]
       },
       styles: {
@@ -383,14 +344,6 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up the build process
     concurrent: {
       server: [
-<<<<<<< HEAD
-        'compass:server'
-      ],
-      test: [
-        'compass'
-      ],
-      dist: [
-=======
         'coffee:dist',
         'compass:server'
       ],
@@ -400,7 +353,6 @@ module.exports = function (grunt) {
       ],
       dist: [
         'coffee',
->>>>>>> temp
         'compass:dist',
         'imagemin',
         'svgmin'
