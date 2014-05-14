@@ -28,6 +28,28 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
 
+    //TODO - posloziti sve potrebne linkove do datoteka .js .html .css
+    manifest: {
+      generate: {
+        options: {
+          basePath: '../',
+          cache: [''],
+          network: ['http://*', 'https://*'],
+          //fallback: ['/ /offline.html'],
+          exclude: [],
+          preferOnline: true,
+          verbose: true,
+          timestamp: true,
+          hash: true,
+          master: ['index.html']
+        },
+        src: [
+
+        ],
+        dest: '<%= yeoman.app %>/cache.manifest'
+      }
+    },
+
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
@@ -459,6 +481,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
+    'manifest',
     'newer:jshint',
     'test',
     'build'

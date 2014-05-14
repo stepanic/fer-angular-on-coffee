@@ -6,7 +6,8 @@ angular
     'ngResource',
     'ngSanitize',
     'ngRoute',
-    'FBAngular'
+    'FBAngular',
+    'cfp.hotkeys'
   ])
   .config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
     $routeProvider
@@ -19,9 +20,12 @@ angular
       .when '/demo2',
         templateUrl: 'views/demo2.html'
         controller: 'MainCtrl'
+      .when '/slide-:slide',
+        templateUrl: 'views/slide.html'
+        controller: 'MainCtrl'
       .otherwise
         redirectTo: '/'
 
-    $locationProvider.html5Mode(true)
+    $locationProvider.html5Mode(false)
   ]
 
