@@ -7,7 +7,8 @@ angular
     'ngSanitize',
     'ngRoute',
     'FBAngular',
-    'cfp.hotkeys'
+    'cfp.hotkeys',
+    'hljs'
   ])
   .config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
     $routeProvider

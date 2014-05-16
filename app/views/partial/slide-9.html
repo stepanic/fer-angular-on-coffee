@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-md-6" style="padding-left:0px;" >
+    <h2>CoffeeScript</h2>
+  </div>
+  <div class="col-md-6" >
+    <h2>JavaScript</h2>
+  </div>
+</div>
+
+<script type="text/ng-template" id="slide9Code1">
+solipsism = true if mind? and not world?
+
+speed = 0
+speed ?= 15
+
+footprints = yeti ? "bear"
+</script>
+
+<script type="text/ng-template" id="slide9Code2">
+var footprints, solipsism, speed;
+
+if ((typeof mind !== "undefined" && mind !== null) && (typeof world === "undefined" || world === null)) {
+  solipsism = true;
+}
+
+speed = 0;
+
+if (speed == null) {
+  speed = 15;
+}
+
+footprints = typeof yeti !== "undefined" && yeti !== null ? yeti : "bear";
+</script>
+
+
+<div class="row">
+  <div class="col-md-6" style="padding-left:0px;" >
+    <div hljs include="'slide9Code1'" language="coffeescript" ></div>
+  </div>
+  <div class="col-md-6" >
+    <div hljs include="'slide9Code2'" language="javascript" ></div>
+  </div>
+</div>

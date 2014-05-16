@@ -20,6 +20,17 @@ angular.module('angularOnCoffeeApp')
       # Caching - Template preload
       $http.get "#{slide.view}", {cache:$templateCache} for slide in SlideRepo.getAll()
 
+      # CodeMirror editor for displaying code with syntax highlight
+      $scope.editorOptions =
+        lineWrapping : true
+        lineNumbers: true
+        readOnly: 'nocursor'
+        mode: 'javascript'
+        theme: 'ambience'
+
+      #$scope.demoCode = 'alert("bla");'
+
+
       # Change slide  - all slides are views/partial/slide-ID.html
       changeSlide = (id) ->
         if id and not isNaN(id)

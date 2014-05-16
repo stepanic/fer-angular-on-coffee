@@ -71,10 +71,15 @@ body {
     margin-top: 28px;
 }
 
+.col-md-6 {
+    width: 50%;
+    float: left;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 730px;
+        max-width: 930px;
     }
 
     /* Remove the padding we set earlier */
