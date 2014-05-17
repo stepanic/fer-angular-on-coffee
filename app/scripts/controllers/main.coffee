@@ -57,7 +57,7 @@ angular.module('angularOnCoffeeApp')
           changeSlide id
 
       # Get params from URL
-      params = $route.current.params;
+      params = $route.current.params
       # Bind params.slide to view
       changeSlide parseInt params.slide, 10
 

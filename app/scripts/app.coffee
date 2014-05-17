@@ -15,12 +15,6 @@ angular
       .when '/',
         templateUrl: 'views/main.html'
         controller: 'MainCtrl'
-      .when '/demo1',
-        templateUrl: 'views/demo1.html'
-        controller: 'MainCtrl'
-      .when '/demo2',
-        templateUrl: 'views/demo2.html'
-        controller: 'MainCtrl'
       .when '/slide-:slide',
         templateUrl: 'views/slide.html'
         controller: 'MainCtrl'

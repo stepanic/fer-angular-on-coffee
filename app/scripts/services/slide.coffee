@@ -112,6 +112,42 @@ angular.module('angularOnCoffeeApp')
         title: 'AngularJS - Templates and binding',
         view: "views/partial/slide-18.html"
       },
+      {
+        id: 19,
+        route: '/slide-19',
+        title: 'AngularJS - Two-way Data Binding',
+        view: "views/partial/slide-19.html"
+      },
+      {
+        id: 20,
+        route: '/slide-20',
+        title: 'AngularJS - Dependency Injection',
+        view: "views/partial/slide-20.html"
+      },
+      {
+        id: 21,
+        route: '/slide-21',
+        title: 'AngularJS - Routing & Multiple Views 1/2',
+        view: "views/partial/slide-21.html"
+      },
+      {
+        id: 22,
+        route: '/slide-22',
+        title: 'AngularJS - Routing & Multiple Views 2/2',
+        view: "views/partial/slide-22.html"
+      },
+      {
+        id: 23,
+        route: '/slide-23',
+        title: 'AngularJS - Tip and tricks 1/2',
+        view: "views/partial/slide-23.html"
+      },
+      {
+        id: 24,
+        route: '/slide-24',
+        title: 'AngularJS - Tip and tricks 2/2',
+        view: "views/partial/slide-24.html"
+      },
     ]
 
 

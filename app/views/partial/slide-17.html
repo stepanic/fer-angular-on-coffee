@@ -1,13 +1,8 @@
 <script type="text/ng-template" id="slide17Code1">
 angular
-  .module('angularOnCoffeeApp', ['ngCookies', 'ngResource'])
-  .config ['$routeProvider', ($routeProvider) ->
-    $routeProvider
-      .when '/',
-        templateUrl: 'views/main.html'
-        controller: 'MainCtrl'
-      .otherwise
-        redirectTo: '/'
+  .module('angularOnCoffeeApp', ['ngCookies', 'ngResource', ...])
+  .config [() ->
+    ...
   ]
 
 ...

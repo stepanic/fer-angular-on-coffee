@@ -1,0 +1,32 @@
+<script type="text/ng-template" id="slide22Code1">
+angular
+  .module('angularOnCoffeeApp', ['ngRoute', ...])
+  .config ['$routeProvider', ($routeProvider) ->
+    $routeProvider
+      .when '/',
+        templateUrl: 'views/main.html'
+        controller: 'MainCtrl'
+      .when '/slide-:slide',
+        templateUrl: 'views/slide.html'
+        controller: 'MainCtrl'
+      .otherwise
+        redirectTo: '/'
+  ]
+
+angular.module('angularOnCoffeeApp')
+  .controller 'MainCtrl', ['$route', ($route) ->
+    slideId = $route.current.params.slide
+
+<body ng-app="angularOnCoffeeApp">
+  ...
+  <div ng-view></div>
+  ...
+  <script src="bower_components/angular-route/angular-route.js"></script>
+</script>
+
+
+<div class="row">
+  <div class="col-md-12" style="padding-left:0px;" >
+    <div hljs include="'slide22Code1'" language="coffeescript"></div>
+  </div>
+</div>
