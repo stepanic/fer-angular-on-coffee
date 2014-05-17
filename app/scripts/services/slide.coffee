@@ -106,6 +106,12 @@ angular.module('angularOnCoffeeApp')
         title: 'AngularJS - Bootstraping',
         view: "views/partial/slide-17.html"
       },
+      {
+        id: 18,
+        route: '/slide-18',
+        title: 'AngularJS - Templates and binding',
+        view: "views/partial/slide-18.html"
+      },
     ]
 
 
