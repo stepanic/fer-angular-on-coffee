@@ -13,13 +13,13 @@ angular.module('angularOnCoffeeApp')
       {
         id: 2,
         route: '/slide-2',
-        title: 'CoffeeScript - motivation',
+        title: 'CoffeeScript - Motivation',
         view: "views/partial/slide-2.html"
       },
       {
         id: 3,
         route: '/slide-3',
-        title: 'CoffeeScript - useful things',
+        title: 'CoffeeScript - Useful things',
         view: "views/partial/slide-3.html"
       },
       {
@@ -64,7 +64,51 @@ angular.module('angularOnCoffeeApp')
         title: 'CoffeeScript - OOP',
         view: "views/partial/slide-10.html"
       },
+      {
+        id: 11,
+        route: '/slide-11',
+        title: 'CoffeeScript - Destructuring Assignment',
+        view: "views/partial/slide-11.html"
+      },
+      {
+        id: 12,
+        route: '/slide-12',
+        title: 'CoffeeScript - Switch/When/Else',
+        view: "views/partial/slide-12.html"
+      },
+      {
+        id: 13,
+        route: '/slide-13',
+        title: 'CoffeeScript - Strings',
+        view: "views/partial/slide-13.html"
+      },
+      {
+        id: 14,
+        route: '/slide-14',
+        title: 'CoffeeScript - finally few important things',
+        view: "views/partial/slide-14.html"
+      },
+      {
+        id: 15,
+        route: '/slide-15',
+        title: 'AngularJS - Introduction',
+        view: "views/partial/slide-15.html"
+      },
+      {
+        id: 16,
+        route: '/slide-16',
+        title: 'AngularJS - Arhitecture',
+        view: "views/partial/slide-16.html"
+      },
+      {
+        id: 17,
+        route: '/slide-17',
+        title: 'AngularJS - Bootstraping',
+        view: "views/partial/slide-17.html"
+      },
     ]
+
+
 
     minId: () ->
       slides[0].id

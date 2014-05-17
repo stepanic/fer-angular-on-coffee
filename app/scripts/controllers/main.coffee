@@ -68,6 +68,11 @@ angular.module('angularOnCoffeeApp')
         callback: ->
           $scope.goFullscreen()
       hotkeys.add
+        combo: 'esc'
+        description: "Toggle fullscreen"
+        callback: ->
+          $scope.goFullscreen()
+      hotkeys.add
         combo: 'left'
         description: "Navigate slides left (backward)"
         callback: ->

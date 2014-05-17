@@ -2,12 +2,12 @@
 
 angular
   .module('angularOnCoffeeApp', [
-    'ngCookies',
-    'ngResource',
-    'ngSanitize',
-    'ngRoute',
-    'FBAngular',
-    'cfp.hotkeys',
+    'ngCookies'
+    'ngResource'
+    'ngSanitize'
+    'ngRoute'
+    'FBAngular'
+    'cfp.hotkeys'
     'hljs'
   ])
   .config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
