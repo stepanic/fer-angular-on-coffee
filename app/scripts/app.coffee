@@ -10,7 +10,7 @@ angular
     'cfp.hotkeys'
     'hljs'
   ])
-  .config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
+  .config ['$routeProvider', '$locationProvider',  ($routeProvider, $locationProvider) ->
     $routeProvider
       .when '/',
         templateUrl: 'views/main.html'
@@ -22,5 +22,6 @@ angular
         redirectTo: '/'
 
     $locationProvider.html5Mode(false)
+
   ]
 

@@ -1,0 +1,32 @@
+<div ng-controller="DemoCtrl" style="font-size:24px;" >
+
+
+<style type="text/css">
+  .task_in_progress {
+    color: red;
+  }
+</style>
+
+  <div class="row" >
+    <div class="col-md-6" style="padding-left:0px;" >
+      <div>
+        <ul>
+          <li ng-repeat="task in model.allTasks"   >
+            <b>{{task.title}} - <span ng-class="{task_in_progress: task.inProgress}" >{{task.duration}}</span></b>
+            <br>
+            <span>{{task.desc}}</span>
+            <button ng-show="!task.inProgress" ng-click="doTask(task)">ODRADI</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-6" style="" >
+      <button ng-click="getAllTasks()" >getAllTasks()</button>
+      <br><br>
+      <button ng-click="connectToSails()" >connectToSails()</button>
+    </div>
+  </div>
+
+</div>
+

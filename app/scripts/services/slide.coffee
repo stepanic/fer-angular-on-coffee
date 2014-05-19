@@ -139,14 +139,32 @@ angular.module('angularOnCoffeeApp')
       {
         id: 23,
         route: '/slide-23',
-        title: 'AngularJS - Tip and tricks 1/2',
+        title: 'AngularJS - Tips and tricks 1/2',
         view: "views/partial/slide-23.html"
       },
       {
         id: 24,
         route: '/slide-24',
-        title: 'AngularJS - Tip and tricks 2/2',
+        title: 'AngularJS - Tips and tricks 2/2',
         view: "views/partial/slide-24.html"
+      },
+      {
+        id: 25,
+        route: '/slide-25',
+        title: 'AngularJS - DEMO',
+        view: "views/partial/slide-25.html"
+      },
+      {
+        id: 25,
+        route: '/slide-25',
+        title: 'AngularJS - DEMO',
+        view: "views/partial/slide-25.html"
+      },
+      {
+        id: 26,
+        route: '/slide-26',
+        title: 'AngularJS - DEMO',
+        view: "views/partial/slide-25.html"
       },
     ]
 
