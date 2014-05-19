@@ -1,0 +1,32 @@
+<div class="row"><div class="col-md-6" style="padding-left:0px"><h2>CoffeeScript</h2></div><div class="col-md-6"><h2>JavaScript</h2></div></div><script type="text/ng-template" id="slide12Code1">switch day
+  when "Mon" then go work
+  when "Tue" then go relax
+  when "Thu" then go iceFishing
+  when "Fri", "Sat"
+    if day is bingoDay
+      go bingo
+      go dancing
+  when "Sun" then go church
+  else go work</script><script type="text/ng-template" id="slide12Code2">switch (day) {
+  case "Mon":
+    go(work);
+    break;
+  case "Tue":
+    go(relax);
+    break;
+  case "Thu":
+    go(iceFishing);
+    break;
+  case "Fri":
+  case "Sat":
+    if (day === bingoDay) {
+      go(bingo);
+      go(dancing);
+    }
+    break;
+  case "Sun":
+    go(church);
+    break;
+  default:
+    go(work);
+}</script><div class="row"><div class="col-md-6" style="padding-left:0px"><div hljs="" include="'slide12Code1'" language="coffeescript"></div></div><div class="col-md-6"><div hljs="" include="'slide12Code2'" language="javascript"></div></div></div>

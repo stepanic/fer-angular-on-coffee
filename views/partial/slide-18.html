@@ -1,0 +1,24 @@
+<script type="text/ng-template" id="slide18Code1">angular.module('angularOnCoffeeApp')
+  .controller 'DemoCtrl', ['$scope', ($scope) ->
+    $scope.awesomeThings = [
+      'CoffeeScript'
+      'AngularJS'
+      'HTML5 Boilerplate'
+      'Karma'
+      'Yeoman'
+      'Grunt'
+      'Bower'
+      'GitHub'
+    ]
+    $scope.search = ''
+  ]
+
+<img src="images/angular_templates.png" ng-show="openedImage" ng-click="openedImage=false" style="width:600px; float:right;">
+<img src="images/angular_templates.png" ng-show="!openedImage" ng-click="openedImage=true" style="width:100%; float:right;">
+
+<h3>Search - Filter</h3>
+  <input ng-model="search" />
+<h3>Awesome things</h3>
+  <ul>
+    <li ng-repeat="t in awesomeThings | filter:search" >{{t}}</li>
+  </ul></script><div class="row" ng-controller="DemoCtrl"><div class="col-md-8" style="padding-left:0px"><div hljs="" include="'slide18Code1'" language="coffeescript"></div></div><div class="col-md-4" style=""><img src="images/angular_templates.png" ng-show="openedImage" ng-click="openedImage=false" style="width:600px; float:right"> <img src="images/angular_templates.png" ng-show="!openedImage" ng-click="openedImage=true" style="width:100%; float:right"><h3>Search - Filter</h3><input ng-model="search"><h3>Awesome things</h3><ul><li ng-repeat="thing in awesomeThings | filter:search">{{thing}}</li></ul></div></div>
