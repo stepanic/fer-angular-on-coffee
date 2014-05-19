@@ -1,8 +1,0 @@
-<h2>&bull; AngularJS official GUIDE and DOCS<br>&nbsp; &nbsp; <a href="https://docs.angularjs.org/guide" target="_blank">https://docs.angularjs.org/guide</a><br>&nbsp; &nbsp; <a href="https://docs.angularjs.org/api" target="_blank">https://docs.angularjs.org/api</a></h2><h2>&bull; Naming convention - don't use prefix $ and $$<br>&nbsp; &nbsp; $ for Angular built-in services<br>&nbsp; &nbsp; $$ for Angular private</h2><h2>&bull; Minification - solution for DI<br>&nbsp; &nbsp; <span style="color:red"><b>Incorrect</b></span><br><pre style="font-size:18px">angular.module('angularOnCoffeeApp')
-  .controller 'MainCtrl', ($scope)->
-    ...
-</pre>&nbsp; &nbsp; <span style="color:green"><b>Correct</b></span><br><pre style="font-size:18px">angular.module('angularOnCoffeeApp')
-  .controller 'MainCtrl', ['$scope', ($scope)->
-    ...
-  ]
-</pre></h2>
