@@ -163,8 +163,44 @@ angular.module('angularOnCoffeeApp')
       {
         id: 26,
         route: '/slide-26',
-        title: 'AngularJS - DEMO',
-        view: "views/partial/slide-25.html"
+        title: 'Development - Introduction',
+        view: "views/partial/slide-26.html"
+      },
+      {
+        id: 27,
+        route: '/slide-27',
+        title: 'Development - Yeoman.io - Install',
+        view: "views/partial/slide-27.html"
+      },
+      {
+        id: 28,
+        route: '/slide-28',
+        title: 'Development - Yeoman.io - From nothing',
+        view: "views/partial/slide-28.html"
+      },
+      {
+        id: 29,
+        route: '/slide-29',
+        title: 'Development - Yeoman.io - From GIT repo',
+        view: "views/partial/slide-29.html"
+      },
+      {
+        id: 30,
+        route: '/slide-30',
+        title: 'Technology used - Tnx to open-source',
+        view: "views/partial/slide-30.html"
+      },
+      {
+        id: 31,
+        route: '/slide-31',
+        title: 'Questions and answers',
+        view: "views/partial/slide-31.html"
+      },
+      {
+        id: 32,
+        route: '/slide-32',
+        title: 'Thank you for attention',
+        view: "views/partial/slide-32.html"
       },
     ]
 
