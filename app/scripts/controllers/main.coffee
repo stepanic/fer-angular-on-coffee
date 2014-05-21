@@ -33,6 +33,7 @@ angular.module('angularOnCoffeeApp')
 
       # Change slide  - all slides are views/partial/slide-ID.html
       changeSlide = (id) ->
+
         if id and not isNaN(id)
           $scope.slide = SlideRepo.getById(id)
 
@@ -43,18 +44,22 @@ angular.module('angularOnCoffeeApp')
 
           if id isnt parseInt params.slide, 10
             $location.path $scope.slide.route
+        else
+          $location.path "/"
 
       # Navigate slides - forward/backward navigation between slides
       navigateSlide = (direction) ->
-        if $scope.slide.id isnt null
+        if $scope.slide
           id = $scope.slide.id # Current slide
           if direction is 'left'
-            if id > slideIdMin
-              id -= 1
+            id -= 1
           else
             if id < slideIdMax
               id += 1
           changeSlide id
+        else
+          if direction is 'right'
+            changeSlide 1
 
       # Get params from URL
       params = $route.current.params
