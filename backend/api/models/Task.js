@@ -1,0 +1,29 @@
+/**
+ * Task
+ *
+ * @module      :: Model
+ * @description :: A short summary of how this model works and what it represents.
+ * @docs		:: http://sailsjs.org/#!documentation/models
+ */
+
+module.exports = {
+
+  attributes: {
+
+    title: {
+      type: 'string',
+      required: true,
+    },
+    desc: {
+      type: 'string'
+    },
+  	duration: {
+      type: 'integer',
+      required: true,
+      min: 1,
+      max: 20,
+    },
+
+  }
+
+};
